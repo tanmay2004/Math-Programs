@@ -11,12 +11,6 @@ def next_num(num_1, num_2):
   sum = num_1 + num_2 
   return sum
   
-def find_average(list_of_nums):
-  total = 0
-  for i in list_of_nums:
-    total += i
-  return total / len(list_of_nums)
-    
 stop_asking = False
 
 while stop_asking == False:
@@ -57,7 +51,7 @@ while stop_asking == False:
               thing2 = the_num
               
           print ("\nFibbonaci Series Complete!")
-          print ("The average of the numbers in the above series is", find_average(all_nums_in_series), "\n") 
+          print ("The average of the numbers in the above series is", (sum(all_nums_in_series) / len(all_nums_in_series)), "\n")
           
         else:
           print ("You can only enter a natural number. Please try again.")  

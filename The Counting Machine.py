@@ -131,5 +131,3 @@ while done == False:
   if again_or_not != "":
     print ("You ended the game. Game Over!") 
     done = True
-          
-  # Two parameters in the function 'counting': starting and ending number.
