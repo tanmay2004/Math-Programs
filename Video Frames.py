@@ -24,3 +24,4 @@ def create_frame(video_title, img_name):
 create_frame("name_of_video.mp4", "output_mid_frame") # format of calling the function
 
 # Helped by https://www.geeksforgeeks.org/extract-images-from-video-in-python/
+# Other ways to extract frames from a video: https://www.raymond.cc/blog/extract-video-frames-to-images-using-vlc-media-player/
