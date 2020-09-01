@@ -42,13 +42,13 @@ def prime_factors(x):
     # Thus, I must make a function to check the divisibility of any two numbers! >> DONE
     divided_x = x
     
-    for i in range(2, int(x / 2)):
+    for i in range(2, int(x / 2) + 1):
       if prime_number(i) == True:
         while (divisibility_check(divided_x, i)):
-          factors_list.append(i)
-          divided_x = divided_x / i
+          factors_list.append(str(i))
+          divided_x = divided_x // i
           
-    return "\nThe Prime Factorization of " + str(x) + " is " + ' x '.join([str(factor) for factor in factors_list])
+    return "\nThe Prime Factorization of " + str(x) + " is " + ' x '.join(factors_list)
     
   elif x < 1:
     return "The number you entered can't be prime factorized. Please try again."
